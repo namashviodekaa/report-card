@@ -1,0 +1,26 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color:blanchedalmond;
+
+}
+h2{
+    size: 888px;
+}
+#percentage{
+    color: brown;
+
+}
+input{
+    margin: 12px;
+    width: 250px;
+}
+button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(161, 47, 21);
+    font-size: 25px;
+    font-weight: 100px;
+    border-radius: 88px;
+}

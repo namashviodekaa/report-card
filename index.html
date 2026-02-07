@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>report card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Report Card</h2>
+        <input type="text" id="name" placeholder="Enter your name"><br/>
+        <input type="number" id="mat" placeholder="Enter marks obtained in maths"><br/>
+        <input type="number" id="sci" placeholder="Enter marks obtained in science"><br/>
+        <input type="number" id="eng" placeholder="Enter marks obtained in english"><br/>
+        <button onclick="calculatemarks()"> See your result</button>
+        <p id="percentage"> Percentage: </p>
+        <p id="status">Status</p>
+    </div>
+
+
+    <script>
+        function calculatemarks()
+        {
+            var m=Number(document.getElementById("mat").value);
+            var s=Number(document.getElementById("sci").value);
+            var e=Number(document.getElementById("eng").value);
+            var calculatemark=m+s+e;
+            console.log(m);
+            console.log(s);
+            var percentagee=calculatemark/300*100;
+            document.getElementById("percentage").innerText=percentagee;
+            if(percentagee<40)
+            {
+                return document.getElementById("status").innerText="FAIL";
+            }
+            else
+            {
+                return document.getElementById("status").innerText="PASS";
+            }
+
+        }
+    </script>
+</body>
+</html>
